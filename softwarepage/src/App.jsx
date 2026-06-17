@@ -1,7 +1,7 @@
 import { useState } from 'react'
  import AboutUS from './components/AboutUs'
  import OurValues from './components/OurValues'
-
+import OurValuesSction2 from './components/OurValuesPart2'
 function App() {
  
 
@@ -9,6 +9,7 @@ function App() {
     <>
     <AboutUS />
     <OurValues />
+    < OurValuesSction2 />
     </>
   )
 }

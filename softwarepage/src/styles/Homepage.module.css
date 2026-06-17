@@ -132,3 +132,125 @@ body{
   flex-direction: column;
   gap: 20px;
 }
+
+.requirementsSection {
+  background-color: #1a2639; 
+  color: #ffffff;
+  padding: 100px 100px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.requirementsContainer {
+  flex: 0.9;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.requirementsHeader h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.2;
+  position: relative;
+}
+
+.requirementsHeader::before {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 4px;
+  background-color: #e61c3e; 
+  margin-bottom: 20px;
+}
+
+.requirementsHeader p {
+  color: #b0c4de;
+  font-size: 1rem;
+  line-height: 1.6;
+  height: 100px;
+}
+
+.requirementsList {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.icon {
+  border: 1px solid #e61c3e;
+  color: #e61c3e;
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+}
+
+.requirementsListContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.requirementsListContent h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0 0 4px 0;
+}
+
+.requirementsList ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.requirementsList li {
+  color: #b0c4de;
+  font-size: 0.95rem;
+}
+
+.requirementsBox {
+  display: flex ;
+  gap: 20px;
+}
+
+.cardBlue, .cardRed {
+  width: 350px;
+  height: 340px;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.cardBlue {
+  background-color: #003366;
+}
+
+.cardRed {
+  background-color: #e61c3e; 
+}
+
+.cardBlue h4, .cardRed h4 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.4;
+  padding: 5%;
+}
+
+.cardBlue i, .cardRed i {
+  font-size: 2.2rem;    
+  padding: 5%;
+}

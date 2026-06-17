@@ -1,5 +1,6 @@
 import { useState } from 'react'
- import AboutUS from './components/AboutUs'
+import AboutUS from './components/AboutUs'
+import NavigationBar from './components/NavigationBar'
  
 
 function App() {
@@ -7,8 +8,9 @@ function App() {
 
   return (
     <>
+    <NavigationBar />
     <AboutUS />
- 
+
     </>
   )
 }

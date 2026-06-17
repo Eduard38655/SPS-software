@@ -47,7 +47,7 @@
 }
 
 .logo{                     
-  color: var(--sps-text-on-light);          
+  color: var(--sps-text-on-light);  
   font-size: 22px;
   font-weight: 700;
   margin: 0;
@@ -58,7 +58,7 @@
 }
 
 .menu ul{
-  list-style: none;                          
+  list-style: none;                       
   margin: 0;
   padding: 0;
   display: flex;     
@@ -67,7 +67,7 @@
 
 .menu :global(ul li a){
   text-decoration: none;                    
-  color: var(--sps-text-on-light);          
+  color: rgb(118, 119, 163);          
   font-size: 15px;
   font-weight: 500;
   padding: 8px 4px;
@@ -80,7 +80,7 @@
 }
 
 .menu :global(a.active){
-  color: var(--sps-text-on-light);            
+  color: var(--sps-text-on-dark);            
   font-weight: 700;                          
 }
 

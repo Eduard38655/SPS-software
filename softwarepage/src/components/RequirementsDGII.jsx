@@ -16,3 +16,5 @@ function RequirementsDGII() {
         </section>
     );
 }
+
+export default RequirementsDGII;

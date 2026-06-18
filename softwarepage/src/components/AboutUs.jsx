@@ -1,6 +1,6 @@
 import HomePageImg from "../../public/HomePageImg.jpeg";
 import style from "../styles/Homepage.module.css";
-function AboutUS(params) {
+function AboutUS() {
   return (
     <>
     <section className={style.homePage_Section}>

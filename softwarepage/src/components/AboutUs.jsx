@@ -28,7 +28,7 @@ function AboutUS(params) {
         </p>
        
 
-      <div>
+      <div className={style.homePage_Content_Container_Button}>
         <button>
           <a href="#">
             Conocer nuestros Productos{" "}

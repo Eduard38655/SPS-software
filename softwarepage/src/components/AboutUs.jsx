@@ -3,7 +3,7 @@ import style from "../styles/Homepage.module.css";
 function AboutUS() {
   return (
     <>
-    <section className={style.homePage_Section}>
+    <section className={style.homePage_Section} id="home">
         
     <div className={style.homePage_Container}>
           <img src={HomePageImg} alt="Home Page" />

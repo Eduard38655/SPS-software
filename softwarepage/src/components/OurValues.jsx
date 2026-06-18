@@ -3,7 +3,9 @@ import style from "../styles/OurValues.module.css";
 function OurValues(params) {
   return (
     <>
-      <div className={style.ourValues_container}>
+      <div className={style.ourValues_container} id="about">
+
+        
         <div className={style.ourValues_container__content}>
           <div className={style.ourValues_container__text}>
             <h3>Quienes Somos</h3>

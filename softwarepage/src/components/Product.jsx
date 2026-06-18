@@ -5,6 +5,7 @@ function Products(params) {
     <>
       <div className={style.Container_Soft_Section}>
         <div className={style.Container_Duke_Details}>
+          
           <div className={style.SoftSection_Header}>
             <div className={style.Soft_header_Title}>
               <h3>Software DUKE </h3>

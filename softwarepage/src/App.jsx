@@ -11,18 +11,20 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <>
+    <main>
       <NavigationBar />
       <AboutUS />
+<OurValues/>
+<OurValuesSction2 />
+       
+      <Products />
+      
+      <WhatsApp />
       <RequirementsDGII />
       <NewsSection />
-      <OurValues />
-      <OurValuesSction2 />
-      <Products />
-      <SPSMap />
-      <WhatsApp />
+       <SPSMap />
       <Footer />
-    </>
+    </main>
   );
 }
 

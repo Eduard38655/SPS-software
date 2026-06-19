@@ -5,6 +5,7 @@ function SubSectionSoft(params) {
     <>
       <div className={style.Contaiuner_Support}>
         <div className={style.SubContaiuner_Support}>
+          
           <div className={style.Card_support}>
             <i className="fa-solid fa-code"></i>
             <div>

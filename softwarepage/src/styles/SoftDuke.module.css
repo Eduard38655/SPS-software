@@ -1,5 +1,33 @@
- 
+:root {
+  --sps-bg-main: #f8f9ff;
+  --sps-bg-card: #ffffff;
+  --sps-bg-section-alt: #eff4ff;
+  --sps-bg-accent: #e5eaf5;
+  --sps-bg-dark: #003366;
+  --sps-primary: #003366;
+  --sps-primary-hover: #002244;
+  --sps-border: #cbdbf5;
+  --sps-text-main: #003366;
+  --sps-text-light: #ffffff;
+  --sps-text-muted: #4b5563;
+  --sps-font-family: "Inter", system-ui, -apple-system, sans-serif;
+  --sps-radius: 4px;
+  --color-primary: #003366;
+  --Background-color-secondary: #2dbcfe;
+  --color-text-2: #d3e4fe;
+  --BackgroundGradient: linear-gradient(
+    rgba(7, 78, 150, 0.85),
+    rgba(6, 82, 157, 0.85)
+  );
+  --icon_backgorund: #0033661a;
+  --color_line: #00658d;
 
+  --color_true: #059669;
+  --background_op_info: #0596691a;
+  --color-icons: #004866;
+  --Background_Map: #e5eeff;
+  --footer_Background: #001e40;
+}
 .Container_Soft_Section {
   width: 100%;
   height: 700px;
@@ -19,13 +47,13 @@
 }
 
 .SoftSection_Header {
-  width:100%;
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-align-items: center;
-justify-content: center;
+  align-items: center;
+  justify-content: center;
   padding: 20px;
 }
 
@@ -36,7 +64,6 @@ justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 5px;
- 
 }
 
 .Soft_header_Title h3 {
@@ -54,7 +81,6 @@ justify-content: center;
   display: flex;
   align-items: center;
   gap: 8px;
-  
 }
 .Div_SectionCloud span {
   background-color: var(--background_op_info);
@@ -200,8 +226,8 @@ justify-content: center;
 }
 .MainCard p {
   font-weight: 600;
-  font-size: 0.9rem;
-  color: var(--sps-text-muted);
+  font-size: 0.8rem;
+  color: var(--color-text-2);
 }
 .Facturacion_Div {
   width: auto;
@@ -300,6 +326,116 @@ justify-content: center;
 }
 .Card_support div p {
   font-size: 0.8rem;
-  font-weight:600;
+  font-weight: 600;
   color: var(--sps-text-muted);
+}
+
+@media (max-width: 768px) {
+  .SoftDuke_Content {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+
+    padding: 25px;
+  }
+  .Container_Soft_Section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .SoftDuke_Content_Container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--sps-bg-section-alt);
+  }
+  .SoftDuke_Content_Container__card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--sps-bg-section-alt);
+  }
+  .SoftSection_Header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+  }
+  .Soft_header_Title {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .Soft_header_Title h1 {
+    font-size: 1.2rem;
+  }
+  .Soft_header_Title p {
+    font-size: 0.8rem;
+  }
+  .Card {
+    width: 100%;
+    height: auto;
+    background: var(--sps-bg-card);
+    padding: 20px;
+    border-radius: var(--sps-radius);
+    border: 1px solid var(--sps-border);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    box-shadow: 0 4px 12px rgba(107, 114, 128, 0.2);
+  }
+  .Contaiuner_Support {
+    width: auto;
+    height: auto;
+
+    padding: 15px;
+    text-align: center;
+  }
+  .SubContaiuner_Support {
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+    
+  }
+  .Card_support {
+    width: auto;
+    height: auto;
+    padding: 20px;
+    background-color: var(--sps-bg-card);
+    
+    display: flex;
+    flex-direction: column;
+
+ 
+    border: 1px solid var(--sps-border);
+    border-radius: var(--sps-radius);
+  }
+  .MainCard {
+    width: auto;
+    height: auto;
+
+    gap: 20px;
+  }
 }

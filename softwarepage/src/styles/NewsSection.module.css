@@ -1,4 +1,3 @@
-
 :root {
   --sps-bg-main: #f8f9ff;
   --sps-bg-card: #ffffff;
@@ -22,11 +21,16 @@
     rgba(6, 82, 157, 0.85)
   );
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--sps-font-family);
+}
 .NewsSection {
-  max-width: 100%;
+  max-width: auto;
   margin: 0 auto;
-  padding: 100px 50px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 50px;
   text-align: center;
   background-color: var(--sps-bg-main);
 }
@@ -44,8 +48,9 @@
 }
 
 .NewsSectionBox {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  width: auto;
+  height: auto;
+  display: flex;
   gap: 24px;
   justify-content: center;
   padding: 5%;
@@ -56,12 +61,15 @@
   border: 1px solid var(--sps-border);
   border-radius: 12px;
   overflow: hidden;
-  text-align: left;
+  text-align: start;
   display: flex;
+
   flex-direction: column;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  width: 400px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  width: auto;
 }
 
 .NewsSectionCard:hover {
@@ -85,7 +93,7 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  background-color: var(--sps-bg-section-alt);
+  align-items: start;
 }
 
 .NewsSectionContentCard h5 {
@@ -95,32 +103,41 @@
   text-transform: uppercase;
 }
 
-.NewsSectionCard:nth-child(1) h5 {
+.NewsSectionCard:nth-child(1) h5,
+.NewsSelectedContentCard:nth-child(1) h5 {
   color: #d9383a;
 }
 
-.NewsSectionCard:nth-child(2) h5 {
+.NewsSectionCard:nth-child(2) h5,
+.NewsSelectedContentCard:nth-child(2) h5 {
   color: #2a9d8f;
 }
 
-.NewsSectionCard:nth-child(3) h5 {
+.NewsSectionCard:nth-child(3) h5,
+.NewsSelectedContentCard:nth-child(3) h5 {
   color: #0056b3;
 }
 
 .NewsSectionContentCard h3 {
   color: var(--sps-text-main);
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   line-height: 1.4;
   margin-bottom: 12px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .NewsSectionContentCard p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
   color: var(--sps-text-muted);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   line-height: 1.5;
   margin-bottom: 24px;
   flex-grow: 1;
+  font-weight: 600;
 }
 
 .NewsSectionContentCard a {
@@ -133,10 +150,14 @@
   transition: color 0.2s;
 }
 
-.NewsSectionContentCard a::after {
-  content: " →";
-  margin-left: 6px;
-  transition: transform 0.2s;
+.NewsSectionContentCard button {
+  border: none;
+  width: auto;
+
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: var(--sps-primary);
+  background: none;
 }
 
 .NewsSectionContentCard a:hover {
@@ -145,4 +166,228 @@
 
 .NewsSectionContentCard a:hover::after {
   transform: translateX(4px);
+}
+/*Selected Box*/
+.Selected_SectionBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.Selected_SectionBox__content {
+  width: 50%;
+  height: 100%;
+  border: 1px solid var(--sps-border);
+  border-radius: var(--sps-radius);
+  background-color: var(--sps-bg-card);
+}
+.NewsSeletedCard {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+.NewsSeletedCard img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  transition: transform 0.4s ease-in-out;
+  border-radius: var(--sps-radius) var(--sps-radius) 0px 0px;
+}
+.Selected_SectionBox__content__footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.Selected_SectionBox__content__footer p {
+  color: var(--sps-text-muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.Selected_SectionBox__content__footer button {
+  background: var(--sps-bg-dark);
+  color: var(--sps-text-light);
+  padding: 10px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border: 1px solid var(--sps-border);
+  border-radius: var(--sps-radius);
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+.Selected_SectionBox__content__footer button::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-left: 4px;
+  border-top: 2px solid var(--sps-text-light);
+  border-right: 2px solid var(--sps-text-light);
+  transform: rotate(45deg);
+  transition: transform 0.2s ease-in-out;
+}
+.Selected_SectionBox__content__footer button:hover {
+  background-color: var(--sps-primary-hover);
+}
+.Selected_SectionBox__content__footer button:hover::after {
+  transform: translateX(4px);
+}
+.NewsSelectedContentCard {
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  border-bottom: 1px solid var(--sps-border);
+}
+.NewsSelectedContentCard h5 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.NewsSelectedContentCard h3 {
+  color: var(--sps-text-main);
+  font-size: 1.25rem;
+  line-height: 1.4;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+.NewsSelectedContentCard p {
+  color: var(--sps-text-muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+@media (max-width: 768px) {
+  section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: red;
+  }
+  .NewsSection {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 20px;
+  }
+  .NewsSectionBox {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .NewsSectionCard {
+    width: 100%;
+  }
+  .NewsSeletedCar{
+    width: 100%;
+  }
+  .NewsSeletedCard img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    transition: transform 0.4s ease-in-out;
+    border-radius: var(--sps-radius) var(--sps-radius) 0px 0px;
+  }
+  .Selected_SectionBox__content {
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--sps-border);
+    border-radius: var(--sps-radius);
+    background-color: var(--sps-bg-card);
+  }
+  .Selected_SectionBox__content__footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  .Selected_SectionBox__content__footer p {
+    color: var(--sps-text-muted);
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+  .Selected_SectionBox__content__footer button {
+    background: var(--sps-bg-dark);
+    color: var(--sps-text-light);
+    padding: 10px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border: 1px solid var(--sps-border);
+    border-radius: var(--sps-radius);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  .Selected_SectionBox__content__footer button::after {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-left: 4px;
+    border-top: 2px solid var(--sps-text-light);
+    border-right: 2px solid var(--sps-text-light);
+    transform: rotate(45deg);
+    transition: transform 0.2s ease-in-out;
+  }
+  .Selected_SectionBox__content__footer button:hover {
+    background-color: var(--sps-primary-hover);
+  }
+  .Selected_SectionBox__content__footer button:hover::after {
+    transform: translateX(4px);
+  }
+  .NewsSelectedContentCard {
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    border-bottom: 1px solid var(--sps-border);
+  }
+  .NewsSelectedContentCard h5 {
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+  .NewsSelectedContentCard h3 {
+    color: var(--sps-text-main);
+    font-size: 1.25rem;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+  .NewsSelectedContentCard p {
+    color: var(--sps-text-muted);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
+  
 }

@@ -1,4 +1,3 @@
- 
 * {
   margin: 0;
   padding: 0;
@@ -14,16 +13,14 @@
 }
 .ourValues_container {
   width: 100%;
-  height: 400px;
+  height: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 100px 50px;
   background-color: var(--sps-bg-main);
   gap: 20px;
-   
- 
 }
 .ourValues_container__content {
   width: 90%;
@@ -34,7 +31,6 @@
   justify-content: center;
   justify-content: space-between;
   gap: 20px;
- 
 }
 .ourValues_container__text {
   width: 50%;
@@ -153,12 +149,11 @@
 /*our values section2*/
 .OurValuesSction2_container {
   width: 100%;
-  height: 400px;
-  display: flex;
+  height: auto;
+  display: grid;
   align-items: center;
   justify-content: center;
-  
-     
+ 
 }
 
 .OurValues_Subcontainer {
@@ -166,7 +161,7 @@
   height: auto;
   display: flex;
   flex-direction: column;
- 
+padding: 30px;
   align-content: center;
 }
 .Container_Cards {
@@ -259,4 +254,47 @@
   font-weight: 700;
 }
 
- 
+@media (max-width: 768px) {
+  .OurValuesSction2_container {
+    background-color: var(--sps-bg-section-alt);
+    padding: 20px;
+  }
+  .Container_Cards {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 15px;
+    justify-content: center;
+  }
+  .OurValues_Subcontainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .ourValues_container {
+    flex-direction: column;
+    height: 100%;
+  }
+  .ourValues_container__content {
+    flex-direction: column;
+
+    gap: 30px;
+  }
+  .ourValues_container__text {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  .ourValues_container__values {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Card {
+    width: auto;
+    height: auto;
+  }
+   
+}

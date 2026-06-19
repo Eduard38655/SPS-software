@@ -30,7 +30,7 @@
 }
 
 .Container_Footer {
-  width: auto;
+  width: 100%;
   height: auto;
   display: flex;
   align-items: center;
@@ -44,11 +44,11 @@
 
 .Container_Content_Footer {
   width: 85%;
-  height: 230px;
+  height: auto;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: star;
+  align-items: start;
   
   flex-direction: row;
   justify-content: space-between;
@@ -159,4 +159,18 @@
   border-radius: var(--sps-radius);
   background: #ffffff0d;
   text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .Container_Content_Footer {
+    flex-direction: column;
+     
+    gap: 20px;
+  }
+   .Section_Footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    gap: 10px;}
+
 }

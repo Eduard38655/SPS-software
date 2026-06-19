@@ -3,7 +3,7 @@ import style from "../styles/Location.module.css";
 function SPSMap(params) {
   return (
     <>
-      <div className={style.Container_Map_Location}>
+      <div className={style.Container_Map_Location} id="contact">
         <div className={style.SubContainer_Info}>
 
           <div className={style.Container_Title_Map}>

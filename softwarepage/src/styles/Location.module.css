@@ -10,6 +10,7 @@
   flex-direction: row;
   background: var(--Background_Map);
   padding: 26px;
+  z-index: 1;
 }
 .SubContainer_Info {
   width: 40%;
@@ -92,4 +93,29 @@
   border-radius: var(--sps-radius);
   border: 1px solid var(--sps-border);
   background-color: red;
+}
+
+@media (max-width: 768px) {
+  .Container_Map_Location {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .SubContainer_Info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .Container_Personal_Info {
+    grid-template-columns: repeat(1, 350px);
+    justify-content: center;
+  }
+.Container_Map_Info {
+    width: 100%;
+    height: 350px;
+    display: flex;
+ 
+  }
 }

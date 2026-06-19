@@ -28,12 +28,8 @@
     icon: "fa-solid fa-users",
     title: "Equipo",
     description: "Colaboración sinérgica para alcanzar la excelencia.",
-  },
-  {
-    icon: "fa-solid fa-user-tie",
-    title: "Cliente",
-    description: "El centro de nuestra estrategia y razón de ser.",
-  },
+  }
+  
 ];
 
 export default DataValues

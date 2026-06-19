@@ -2,14 +2,14 @@ import style from "../styles/Requirements.module.css";
 
 function RequirementsDGII() {
     return (
-        <section className={style.requirementsSection}>
+        <section className={style.requirementsSection} id="dgii">
 
             <div className={style.requirementsContainer}>
 
                 <div className={style.requirementsHeader}>
                     <h2>Proveedores de Servicios de Facturación Electrónica (PSFE)</h2>
-                    <p>SPS cumple rigurosamente con todos los requerimientos técnicos y legales 
-                        exigidos por la DGII. Facilitamos el proceso de homologación para que su empresa 
+                    <p>SPS cumple rigurosamente con todos los requerimientos técnicos y legales
+                        exigidos por la DGII. Facilitamos el proceso de homologación para que su empresa
                         pueda emitir comprobantes electrónicos sin fricciones.</p>
                 </div>
 

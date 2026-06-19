@@ -3,6 +3,7 @@ function Footer(params) {
   return (
     <>
       <footer className={style.Container_Footer}>
+
         <div className={style.Container_Content_Footer}>
           <div className={style.title_Footer}>
             <label htmlFor="">SPS Software</label>
@@ -29,20 +30,10 @@ function Footer(params) {
           <div className={style.ul_footer}>
             <label htmlFor="">Enlaces</label>
             <ul>
-              <li>
-                <a href="#Home">Inicio</a>
-              </li>
-              <li>
-                <a href="#AboutUs">Sobre SPS</a>
-              </li>
-
-              <li>
-                <a href="#Products">Productos DUKE</a>
-              </li>
-
-              <li>
-                <a href="#EXIGENCIASDII">Exigencias DGII</a>
-              </li>
+              <li><a href="#home">Inicio</a></li>
+              <li><a href="#about">Sobre SPS</a></li>
+              <li><a href="#products">Productos</a></li>
+              <li><a href="#dgii">Exigencias DGII</a></li>
             </ul>
           </div>
 
@@ -50,14 +41,14 @@ function Footer(params) {
             <label htmlFor="">Soporte</label>
             <ul>
               <li>
-                <a href="#Help">Centro de Ayuda </a>
+                <a href="#contact">Centro de Ayuda </a>
               </li>
               <li>
-                <a href="#Questrions">Preguntas Frecuentes</a>
+                <a href="#contact">Preguntas Frecuentes</a>
               </li>
 
               <li>
-                <a href="#Documentacion">Documentacion API</a>
+                <a href="#news">Documentacion API</a>
               </li>
             </ul>
           </div>

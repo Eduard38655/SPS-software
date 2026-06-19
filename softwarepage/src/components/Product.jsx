@@ -1,11 +1,11 @@
-import style from "../styles/SoftDuke.module.css";
 import SupportSection from "../components/SubSectionSoft";
+import style from "../styles/SoftDuke.module.css";
 function Products(params) {
   return (
     <>
-      <div className={style.Container_Soft_Section}>
+      <div className={style.Container_Soft_Section} id="products">
         <div className={style.Container_Duke_Details}>
-          
+
           <div className={style.SoftSection_Header}>
             <div className={style.Soft_header_Title}>
               <h3>Software DUKE </h3>
@@ -32,22 +32,22 @@ function Products(params) {
 
                 <ul>
                   <li>
-                    <i className="fa-regular fa-circle-check"></i> Controll de
+                    <i className="fa-regular fa-circle-check"></i> {" "}Controll de
                     inventario
                   </li>
 
                   <li>
-                    <i className="fa-regular fa-circle-check"></i> Nomina y
+                    <i className="fa-regular fa-circle-check"></i> {" "}Nomina y
                     Contabilidad
                   </li>
 
                   <li>
-                    <i className="fa-regular fa-circle-check"></i> Cuentas por
+                    <i className="fa-regular fa-circle-check"></i> {" "}Cuentas por
                     Cobrar/Pagar
                   </li>
 
                   <li>
-                    <i className="fa-regular fa-circle-check"></i> Caja Chica y
+                    <i className="fa-regular fa-circle-check"></i>{" "} Caja Chica y
                     Banco
                   </li>
                 </ul>
@@ -55,11 +55,14 @@ function Products(params) {
             </div>
 
             <div className={style.MainCard}>
+
               <div className={style.Div_Icon}>
                 <span className={style.sect_Icon}>
                   <i className="fa-solid fa-receipt"></i>
                 </span>
               </div>
+
+              
               <div className={style.mainCard_Info}>
                 <h4>Facturacoin Electronica </h4>
                 <p>
@@ -84,7 +87,7 @@ function Products(params) {
                 <h4>Puntos de ventas(POS)</h4>
                 <ul>
                   <li>
-                    <i className="fa-regular fa-circle-check"></i> Ventas
+                    <i className="fa-regular fa-circle-check"></i> {" "}Ventas
                     Rapidas y Agiles
                   </li>
 
@@ -94,7 +97,7 @@ function Products(params) {
                   </li>
 
                   <li>
-                    <i className="fa-regular fa-circle-check"></i> Reportes de
+                    <i className="fa-regular fa-circle-check"></i> {" "}Reportes de
                     cierre de caja
                   </li>
                 </ul>

@@ -1,12 +1,14 @@
+import Icono_Sps from "../../public/Icono_Sps.png";
 import style from "../styles/NavigationBar.module.css";
 
-function NavigationBar() {
+
+function NavigationBar() {  
     return (
-    <nav>
+    <nav className={style.navBarContainer}>
         <div className={style.navBar}>
             <span className={style.logo}>
-                <img src="" alt="logo" />
-                <p>SPS</p>
+                <img src={Icono_Sps} alt="logo" />
+                <h1>Software Professional Services</h1>
             </span>
             <div className={style.menu}>
                 <ul>

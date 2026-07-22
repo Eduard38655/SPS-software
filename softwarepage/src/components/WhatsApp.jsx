@@ -7,7 +7,12 @@ function WhatsApp(params) {
     <div className={style.container_Whatsapp}>
         <div>
 
-            <button>
+            <button onClick={() =>
+    window.open(
+      "https://wa.me/18099234056?text=Hola%20quiero%20información",
+      "_blank"
+    )
+  }>
                 <i className="fa-brands fa-whatsapp"></i>
             </button>
         </div>

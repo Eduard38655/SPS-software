@@ -1,8 +1,19 @@
 import Icono_Sps from "../../public/Icono_Sps.png";
 import style from "../styles/NavigationBar.module.css";
-
+import { useState,useEffect } from "react";
 
 function NavigationBar() {  
+const [isActive,SetActive]=useState("home")
+ 
+
+const Routes=[
+    {route:"home",name:"Inicio"},
+    {route:"about",name:"Sobre SPS"},
+    {route:"products",name:"Productos"},
+    {route:"dgii",name:"Exigencias DGII"},
+    {route:"news",name:"Noticias"},
+    {route:"contact",name:"Contacto"}
+] 
     return (
     <nav className={style.navBarContainer}>
         <div className={style.navBar}>
@@ -11,14 +22,17 @@ function NavigationBar() {
                 <h1>Software Professional Services</h1>
             </span>
             <div className={style.menu}>
-                <ul>
-                    <li><a href="#home">Inicio</a></li>
-                    <li><a href="#about">Sobre SPS</a></li>
-                    <li><a href="#products">Productos</a></li>
-                    <li><a href="#dgii">Exigencias DGII</a></li>
-                    <li><a href="#news">Noticias</a></li>   
-                    <li><a href="#contact">Contacto</a></li>
-                </ul>
+                <ul >
+                {Routes.map((exp,index)=>(
+
+                   
+                     <li key={index}  className={exp.route==isActive ? style.ActiveRoute : style.InactiveRoute }  onClick={(e)=>{SetActive(exp.route)}}   >
+                        <a   href={`#${exp.route}`}>{exp.name}</a>
+                    </li>
+                   
+                    
+                ))}
+                  </ul>
             </div>
         </div>
     </nav>

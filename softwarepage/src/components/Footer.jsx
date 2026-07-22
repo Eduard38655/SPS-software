@@ -1,5 +1,7 @@
 import style from "../styles/Footer.module.css";
 function Footer(params) {
+
+
   return (
     <>
       <footer className={style.Container_Footer}>

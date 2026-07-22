@@ -1,26 +1,4 @@
-:root {
-  --sps-bg-main: #f8f9ff;
-  --sps-bg-card: #ffffff;
-  --sps-bg-section-alt: #eff4ff;
-  --sps-bg-accent: #e5eaf5;
-  --sps-bg-dark: #003366;
-  --sps-primary: #003366;
-  --sps-primary-hover: #002244;
-  --sps-border: #cbdbf5;
-  --sps-text-main: #003366;
-  --sps-text-light: #ffffff;
-  --sps-text-muted: #4b5563;
-  --sps-font-family: "Inter", system-ui, -apple-system, sans-serif;
-  --sps-radius: 4px;
-  --color-primary: #003366;
-  --sps-icon: #e61c3e;
-  --Background-color-secondary: #2dbcfe;
-  --color-text-2: #d3e4fe;
-  --BackgroundGradient: linear-gradient(
-    rgba(7, 78, 150, 0.85),
-    rgba(6, 82, 157, 0.85)
-  );
-}
+ 
 * {
   margin: 0;
   padding: 0;
@@ -184,14 +162,14 @@
 
 .Selected_SectionBox__content {
   width: 50%;
-  height: 100%;
+ height: auto;
   border: 1px solid var(--sps-border);
   border-radius: var(--sps-radius);
   background-color: var(--sps-bg-card);
 }
 .NewsSeletedCard {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
 
@@ -283,7 +261,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background-color: red;
+   
   }
   .NewsSection {
     width: 100%;
@@ -297,12 +275,7 @@
     display: grid;
     grid-template-columns: 1fr;
   }
-  .NewsSectionCard {
-    width: 100%;
-  }
-  .NewsSeletedCar{
-    width: 100%;
-  }
+ 
   .NewsSeletedCard img {
     width: 100%;
     height: 160px;
@@ -312,10 +285,11 @@
   }
   .Selected_SectionBox__content {
     width: 100%;
-    height: 100%;
+    height: auto;
     border: 1px solid var(--sps-border);
     border-radius: var(--sps-radius);
     background-color: var(--sps-bg-card);
+    font-size: 0.8rem;
   }
   .Selected_SectionBox__content__footer {
     width: 100%;

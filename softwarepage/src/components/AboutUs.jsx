@@ -14,17 +14,16 @@ function AboutUS() {
             <div className={style.homePage_Content_Container}>
 
               <div className={style.homePage_Content_Container_Header}>
-                <span>Lider en Facturacion elecctronica </span>
+                <span>Líder en Facturación electrónica   </span>
               </div>
 
               <h2>
-                Solucinoes Tecnologicas para la gestions Empresarial y facturacion
-                Electronica{" "}
+                Soluciones Tecnológicas para la gestión empresarial y facturación electrónica{" "}
               </h2>
 
               <p>
-                Ayudamos a empresas de todos los tamanos a optimisart sus procesoss
-                mediamte software confiable , seguro e innovador
+                Ayudamos a empresas de todos los tamaños a optimizar sus procesos
+                mediante software confiable, seguro e innovador
               </p>
 
 
@@ -36,7 +35,7 @@ function AboutUS() {
                   </a>
                 </button>
                 <button>
-                  <a href="#contact">contactar Ahora </a>
+                  <a href="#contact">Contáctanos </a>
                 </button>
               </div>
             </div>

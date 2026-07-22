@@ -17,7 +17,7 @@ function SubSectionSoft(params) {
           <div className={style.Card_support}>
             <i className="fa-solid fa-headset"></i>
             <div>
-              <h4>Soporte Tecnico</h4>
+              <h4>Soporte Técnico</h4>
               <p>24/7 para procesos críticos.</p>
             </div>
           </div>

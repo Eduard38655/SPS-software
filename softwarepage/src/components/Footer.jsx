@@ -10,8 +10,8 @@ function Footer(params) {
           <div className={style.title_Footer}>
             <label htmlFor="">SPS Software</label>
             <p>
-              Innovacoin en softwre empresarial y soluciones para el mercado
-              dominicano.
+              Innovación en software empresarial y soluciones para el mercado
+              Dominicano.
             </p>
 
             <div>
@@ -50,7 +50,7 @@ function Footer(params) {
               </li>
 
               <li>
-                <a href="#news">Documentacion API</a>
+                <a href="#news">Documentación API</a>
               </li>
             </ul>
           </div>
@@ -67,8 +67,7 @@ function Footer(params) {
 
         <div className={style.Section_Footer}>
           <span>
-            &copy; 2026 Software Professional Services (SPS). All Rights
-            reserved.
+            &copy; 2026 Software Professional Services (SPS). All Rights Reserved
           </span>
         </div>
       </footer>

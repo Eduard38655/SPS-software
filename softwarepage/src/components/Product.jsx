@@ -37,13 +37,11 @@ function Products(params) {
 
                 <ul>
                   <li>
-                    <i className="fa-regular fa-circle-check"></i> {" "}Controll de
-                    inventario
+                    <i className="fa-regular fa-circle-check"></i> {" "} Control de inventario
                   </li>
 
                   <li>
-                    <i className="fa-regular fa-circle-check"></i> {" "}Nomina y
-                    Contabilidad
+                    <i className="fa-regular fa-circle-check"></i> {" "} Nómina y Contabilidad
                   </li>
 
                   <li>
@@ -69,15 +67,15 @@ function Products(params) {
 
               
               <div className={style.mainCard_Info}>
-                <h4>Facturacoin Electronica </h4>
+                <h4>Facturación Electrónica </h4>
                 <p>
-                  Implementacion completa para emissoin y reception de e-NCF
-                  bajo los estandares de la DGII.
+                  Implementación completa para emisión y recepción de e-NCF
+                  bajo los estándares de la DGII.
                 </p>
 
                 <div className={style.Facturacion_Div}>
                   <span>Certificado Digital </span>
-                  <span>Firma Electronica </span>
+                  <span>Firma Electrónica</span>
                 </div>
               </div>
             </div>
@@ -89,16 +87,15 @@ function Products(params) {
                 </span>
               </div>
               <div className={style.Card_Content_Details}>
-                <h4>Puntos de ventas(POS)</h4>
+                <h4>Puntos de Venta (POS)</h4>
                 <ul>
                   <li>
-                    <i className="fa-regular fa-circle-check"></i> {" "}Ventas
-                    Rapidas y Agiles
+                    <i className="fa-regular fa-circle-check"></i> {" "} Ventas Rápidas y Ágiles
                   </li>
 
                   <li>
                     <i className="fa-regular fa-circle-check"></i>{" "}
-                    Sincronizacion en tiempo real
+                    Sincronización en tiempo real
                   </li>
 
                   <li>

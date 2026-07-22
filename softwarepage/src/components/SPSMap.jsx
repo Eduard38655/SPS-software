@@ -7,11 +7,11 @@ function SPSMap(params) {
         <div className={style.SubContainer_Info}>
 
           <div className={style.Container_Title_Map}>
-            <h4>Vias de Asistencia e Informacion </h4>
+            <h4>Vías de Asistencia e Información </h4>
             <p>
-              Estamos comprometidos con brindarte el mejor servicio. Aqui
-              encontrara todos nuestros cabnales officiales de contacto y
-              horarios de atecion{" "}
+              Estamos comprometidos con brindarte el mejor servicio. Aquí
+              encontrará todos nuestros canales oficiales de contacto y
+              horarios de atención.{" "}
             </p>
           </div>
 
@@ -21,7 +21,7 @@ function SPSMap(params) {
               <div>
                 <label htmlFor="">Horario de asistencia </label>
                 <p>Lun. a Vie. 8:00 am a 5:00 p.m </p>
-                <p>Sabados.8:00 a.m a 12:00p.m </p>
+                <p>Sábados: 8:00 a. m. a 12:00 p. m.</p>
               </div>
             </div>
             <div className={style.Card_Map}>
@@ -31,14 +31,14 @@ function SPSMap(params) {
               ></i>
               <div>
                 <label htmlFor="">Emergencia</label>
-                <p>Ing. Lenin Martinez </p>
+                <p>Ing. Lenin Martínez</p>
                 <p>809-856-2092</p>
               </div>
             </div>
             <div className={style.Card_Map}>
               <i className="fa-solid fa-location-dot"></i>
               <div>
-                <label htmlFor="">Ubicacion </label>
+                <label htmlFor="">Ubicación</label>
                 <p>Santiago, Rep. Dom.</p>
               </div>
             </div>
@@ -53,7 +53,7 @@ function SPSMap(params) {
             <div className={style.Card_Map}>
               <i className="fa-solid fa-envelope"></i>
               <div>
-                <label htmlFor="">Correos Electronicos </label>
+                <label htmlFor="">Correos Electrónicos</label>
                 <p>spsfinanzas@hotmail.com</p>
                 <p>sps_sistemas@hotmail.com</p>
               </div>

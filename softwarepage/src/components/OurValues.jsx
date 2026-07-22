@@ -8,9 +8,9 @@ function OurValues(params) {
         
         <div className={style.ourValues_container__content}>
           <div className={style.ourValues_container__text}>
-            <h3>Quienes Somos</h3>
+            <h3>Quiénes Somos</h3>
             <p>
-              Softwares Professional Services (SPS) es una empresa comprometida
+              Software Professional Services (SPS) es una empresa comprometida
               con la excelencia en el desarrollo de software.  Nos especializamos
               en crear ecosistemas digitales que permiten a las empresas
               dominicanas cumplir con las normativas locales mientras maximizan

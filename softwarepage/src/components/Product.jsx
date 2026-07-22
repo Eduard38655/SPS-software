@@ -22,11 +22,16 @@ function Products(params) {
 
           <div className={style.SoftDuke_Content}>
             <div className={style.Card}>
+
+
               <div className={style.Icons_Section_Card}>
-                <span>
+                <span className={style.Icons_Section_Card}>
                   <i className="fa-solid fa-box-archive"></i>
                 </span>
               </div>
+
+
+
               <div className={style.Card_Content_Details}>
                 <h4>Sistemas Integrales</h4>
 

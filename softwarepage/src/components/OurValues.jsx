@@ -11,7 +11,7 @@ function OurValues(params) {
             <h3>Quienes Somos</h3>
             <p>
               Softwares Professional Services (SPS) es una empresa comprometida
-              con la excelencia en el desarrollo de software. Nos especializamos
+              con la excelencia en el desarrollo de software.  Nos especializamos
               en crear ecosistemas digitales que permiten a las empresas
               dominicanas cumplir con las normativas locales mientras maximizan
               su eficiencia operativa.

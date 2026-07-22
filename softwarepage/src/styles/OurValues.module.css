@@ -40,6 +40,7 @@
   align-items: flex-start;
   justify-content: center;
   gap: 20px;
+  
 }
 .ourValues_container__text h3 {
   font-size: 1.7rem;
@@ -47,7 +48,7 @@
   font-weight: 650;
 }
 .ourValues_container__text p {
-  width: 90%;
+  width: 85%;
   height: auto;
   font-size: 0.9rem;
   color: var(--sps-text-muted);
@@ -66,7 +67,7 @@
 
 .ourValues_container__values__card {
   width: auto;
-  height: 170px;
+  height: auto;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -148,11 +149,12 @@
 
 /*our values section2*/
 .OurValuesSction2_container {
-  width: 100%;
+  width: auto;
   height: auto;
   display: grid;
   align-items: center;
   justify-content: center;
+  
  
 }
 
@@ -161,7 +163,7 @@
   height: auto;
   display: flex;
   flex-direction: column;
-padding: 30px;
+padding-bottom: 30px;
   align-content: center;
 }
 .Container_Cards {
@@ -171,7 +173,7 @@ padding: 30px;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 15px;
-  padding: 30px;
+  padding-top: 30px;
 }
 .Card {
   width: 190px;
@@ -256,8 +258,9 @@ padding: 30px;
 
 @media (max-width: 768px) {
   .OurValuesSction2_container {
+    width: auto;
     background-color: var(--sps-bg-section-alt);
-    padding: 20px;
+    padding: 15px;
   }
   .Container_Cards {
     width: 100%;
@@ -282,13 +285,19 @@ padding: 30px;
 
     gap: 30px;
   }
+  .Card div p{
+   font-size: 0.7rem;
+  }
+  .Card div h4{
+    font-size: 1rem;
+  }
   .ourValues_container__text {
-    width: 100%;
+    width: auto;
     text-align: center;
     align-items: center;
   }
   .ourValues_container__values {
-    width: 100%;
+    width: auto;
     flex-direction: column;
     align-items: center;
   }
@@ -296,5 +305,12 @@ padding: 30px;
     width: auto;
     height: auto;
   }
-   
+   .ourValues_container__text p {
+  width: 100%;
+  height: auto;
+  font-size: 0.8rem;
+  color: var(--sps-text-muted);
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+}
 }

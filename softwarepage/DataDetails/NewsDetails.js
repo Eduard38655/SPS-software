@@ -9,11 +9,13 @@ import Other_News3 from "../public/Other_News3.avif";
     title: "Nuevos plazos para la Facturación Electrónica",
     description: `
 La Dirección General de Impuestos Internos (DGII) ha emitido un nuevo comunicado detallando la extensión de plazos para que los grandes contribuyentes nacionales finalicen su proceso de migración al sistema de facturación electrónica.
-
+ 
 Esta medida busca garantizar que todas las empresas cuenten con el soporte técnico necesario y hayan completado sus pruebas de homologación satisfactoriamente.
 
 Desde SPS, recomendamos a nuestros clientes revisar su estatus actual y aprovechar este período para asegurar que sus certificados digitales y firmas electrónicas estén vigentes ante la entrada en vigencia de la Ley 32-23.
-    `,
+   
+
+`,
     subtitle: "DGII News",
     published: "01/01/2023",
     img: News1,

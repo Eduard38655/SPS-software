@@ -278,10 +278,10 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
 }
 .Card_support {
-  width: 250px;
+  width: auto;
   height: auto;
   background-color: var(--sps-bg-card);
   padding: 20px;
@@ -304,6 +304,16 @@
   transform: scale(1.05);
   box-shadow: 0 12px 30px rgba(107, 114, 128, 0.35);
 }
+.Card_support div h4{
+  color: var(--sps-primary);
+  font-weight: 600;
+  font-size: 1rem;
+}
+.Card_support div p{
+  font-weight: 500;
+  font-size: 0.8rem;
+   color: var(--sps-text-muted);
+}
 
 .Card_support:active {
   transform: scale(0.98);
@@ -312,23 +322,7 @@
   color: var(--sps-bg-dark);
   font-size: 1.3rem;
 }
-.Card_support div {
-  width: auto;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-.Card_support div h4 {
-  font-size: 0.9rem;
-  font-weight: 650;
-  color: var(--sps-text-main);
-}
-.Card_support div p {
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--sps-text-muted);
-}
+ 
 
 @media (max-width: 768px) {
   .SoftDuke_Content {
@@ -340,7 +334,7 @@
     padding: 25px;
   }
   .Container_Soft_Section {
-    width: 100%;
+    width: auto;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -348,7 +342,7 @@
     justify-content: center;
   }
   .SoftDuke_Content_Container {
-    width: 100%;
+    width: auto;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -357,7 +351,7 @@
     background-color: var(--sps-bg-section-alt);
   }
   .SoftDuke_Content_Container__card {
-    width: 100%;
+    width: auto;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -366,7 +360,7 @@
     background-color: var(--sps-bg-section-alt);
   }
   .SoftSection_Header {
-    width: 100%;
+    width: auto;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -377,7 +371,7 @@
     padding: 20px;
   }
   .Soft_header_Title {
-    width: 100%;
+    width: auto;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -406,36 +400,53 @@
   }
   .Contaiuner_Support {
     width: auto;
-    height: auto;
+    height: 100%;
 
-    padding: 15px;
+  padding: 10px;
     text-align: center;
   }
   .SubContaiuner_Support {
-    width: auto;
-    height: auto;
+     width: auto;
+    height: 100%;
     display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 20px;
+    grid-template-columns: repeat(2,1fr);
+     grid-template-rows: repeat(2, 1fr);
+     
     
   }
   .Card_support {
-    width: auto;
+    width:  auto;
     height: auto;
     padding: 20px;
-    background-color: var(--sps-bg-card);
-    
-    display: flex;
-    flex-direction: column;
-
+   
  
+    display: grid;
+   grid-template-columns: 2,auto;
+  
     border: 1px solid var(--sps-border);
     border-radius: var(--sps-radius);
   }
+    .Card_support div{
+      height: auto;
+      
+    }
+    .Card_support div p{
+      font-size: 0.7rem;
+    }
+     .Card_support div h4{
+      font-size: 0.8rem;
+    }
   .MainCard {
     width: auto;
     height: auto;
-
+ 
     gap: 20px;
+  }
+
+    .Card_Content_Details h4{
+      font-size: 1rem;
+    }
+  .Card_Content_Details ul li{
+font-size: 0.8rem;
   }
 }

@@ -152,7 +152,7 @@ main {
 
 @media (max-width: 768px) {
   main {
-    width: 100%;
+    width:auto;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -185,5 +185,9 @@ main {
 
   .homePage_Content_Container p {
     font-size: 0.9rem;
+  }
+   .homePage_Content_Container_Button button a{
+    font-size: 0.7em;
+    
   }
 }

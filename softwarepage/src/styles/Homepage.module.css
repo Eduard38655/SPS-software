@@ -110,41 +110,39 @@ main {
   display: flex;
   justify-content: center;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
-.homePage_Content_Container_Button button {
+.ctaLinkPrimary,
+.ctaLinkSecondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
   padding: 10px 20px;
   border-radius: var(--sps-radius);
   border: none;
   cursor: pointer;
-}
-
-.homePage_Content_Container_Button button a {
   text-decoration: none;
   text-align: center;
   font-weight: 650;
   font-size: 0.8rem;
+  transition: opacity 0.2s ease;
 }
 
-.homePage_Content_Container_Button button:hover {
-  background-color: var(--sps-primary-hover);
+.ctaLinkPrimary:hover,
+.ctaLinkSecondary:hover {
+  opacity: 0.92;
 }
 
-.homePage_Content_Container_Button button:nth-child(1) {
+.ctaLinkPrimary {
   background-color: var(--Background-color-secondary);
   color: var(--sps-text-main);
 }
 
-.homePage_Content_Container_Button button:nth-child(1) a {
-  color: var(--sps-text-main);
-}
-
-.homePage_Content_Container_Button button:nth-child(2) {
+.ctaLinkSecondary {
   background-color: transparent;
   border: 1px solid var(--sps-border);
-}
-
-.homePage_Content_Container_Button button:nth-child(2) a {
   color: var(--sps-text-light);
 }
 

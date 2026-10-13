@@ -1,6 +1,5 @@
 
 import { useState } from "react";
-import Icono_Sps from "../../public/Icono_Sps.png";
 import style from "../styles/NavigationBar.module.css";
 
 function MobileNavBar() {
@@ -20,7 +19,7 @@ function MobileNavBar() {
       <div className={style.navBar_Mobile}>
         <div className={style.logoContainer}>
           <span className={style.logo}>
-            <img src={Icono_Sps} alt="Logo de SPS Software" />
+            <img src="/Icono_Sps.png" alt="Logo de SPS Software" />
             <h1>SPS</h1>
           </span>
 

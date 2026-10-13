@@ -1,9 +1,9 @@
-  import News1 from "../public/News1.png";
-import News2 from "../public/News2.png";
-import News3 from "../public/News3.png";
-import Other_News1 from "../public/Other_News1.avif";
-import Other_News2 from "../public/Other_News2.avif";
-import Other_News3 from "../public/Other_News3.avif";
+const News1 = "/News1.png";
+const News2 = "/News2.png";
+const News3 = "/News3.png";
+const Other_News1 = "/Other_News1.avif";
+const Other_News2 = "/Other_News2.avif";
+const Other_News3 = "/Other_News3.avif";
   const NewsDetails = [
   {
     title: "Nuevos plazos para la Facturación Electrónica",

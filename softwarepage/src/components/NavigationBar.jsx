@@ -1,4 +1,3 @@
-import Icono_Sps from "../../public/Icono_Sps.png";
 import style from "../styles/NavigationBar.module.css";
 import { useState } from "react";
 
@@ -18,7 +17,7 @@ function NavigationBar() {
     <nav className={style.navBarContainer} aria-label="Navegación principal">
       <div className={style.navBar}>
         <span className={style.logo}>
-          <img src={Icono_Sps} alt="Logo de SPS Software" />
+          <img src="/Icono_Sps.png" alt="Logo de SPS Software" />
           <h1>Software Professional Services</h1>
         </span>
         <div className={style.menu}>

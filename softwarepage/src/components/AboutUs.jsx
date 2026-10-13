@@ -1,4 +1,3 @@
-import HomePageImg from "../../public/HomePageImg.jpeg";
 import style from "../styles/Homepage.module.css";
 
 function AboutUS() {
@@ -6,7 +5,7 @@ function AboutUS() {
     <section className={style.homePage_Section} id="home" aria-label="Inicio de la página principal">
       <div className={style.homePage_Container}>
         <img
-          src={HomePageImg}
+          src="/HomePageImg.jpeg"
           alt="Equipo de SPS Software revisando procesos de facturación electrónica"
         />
 
